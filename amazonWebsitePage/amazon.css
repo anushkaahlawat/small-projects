@@ -105,5 +105,23 @@ span{
    /* box6 */
    .nav-cart{
     padding: 5px;
+    font-weight: 700;
+
+   }
+   .nav-cart i{
+    font-size: 30px;
    }
    
+
+   .strip{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+
+   .strip-opt p{
+    display: inline;
+   }
