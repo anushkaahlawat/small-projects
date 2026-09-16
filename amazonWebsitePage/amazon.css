@@ -106,22 +106,105 @@ span{
    .nav-cart{
     padding: 5px;
     font-weight: 700;
-
    }
+
    .nav-cart i{
     font-size: 30px;
    }
-   
 
-   .strip{
+.strip {
+    width: 100%;
     height: 40px;
-    background-color: #222f3d;
-    display: flex;
+    background-color: #232f3e;
     color: white;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-   }
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 
-   .strip-opt p{
-    display: inline;
-   }
+/* ALL BUTTON */
+.icon-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 25px;
+    white-space: nowrap;
+}
+
+/* NAVIGATION OPTIONS */
+.strip-opt {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex: 1;
+}
+
+.strip-opt p {
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* RIGHT SIDE */
+.strip-deals {
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/** herro section **/
+
+.hero-section{
+    background-image: url("amazonPage.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg{
+    background-color: white;
+    color : black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 0.85rem;
+    bottom: 25px;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-sec a{
+    color: #007185;
+}
+
+/**shopping-section**/
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(205, 188, 167) ;
+}
+.box{
+    border: 2px solid black;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+
+.box img{
+    height: 300px;
+}
+.box-content{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
