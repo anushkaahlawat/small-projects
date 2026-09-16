@@ -158,7 +158,6 @@ span{
 }
 
 /** herro section **/
-
 .hero-section{
     background-image: url("amazonPage.jpg");
     background-size: cover;
@@ -186,25 +185,102 @@ span{
 }
 
 /**shopping-section**/
-.shop-section{
+.shop-section {
     display: flex;
-    justify-content: space-evenly;
-    background-color:rgb(205, 188, 167) ;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #e3e6e6;
+    padding: 20px 25px;
 }
-.box{
-    border: 2px solid black;
-    height: 400px;
-    width: 23%;
+/* ALL BOXES */
+
+.box {
     background-color: white;
-    padding: 20px 0px 15px;
+    width: 25%;
+    min-height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* BOX CONTENT */
+
+.box-content {
+    width: 100%;
 }
 
-.box img{
-    height: 300px;
+.box-content h2 {
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 0 15px 0;
+    color: #0f1111;
 }
-.box-content{
-    margin-left: 10px;
-    margin-right: 10px;
+/* BOX 1 - LARGE IMAGE */
 
+.big-img {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.big-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* BOX 2 & BOX 3 - FOUR IMAGES */
+
+.small-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 10px;
+    margin-bottom: 20px;
+}
+
+.small-images img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+
+.small-images p {
+    font-size: 12px;
+    margin: 5px 0 0;
+    color: #333;
+}
+/* BOX 4 - ONE KITCHEN IMAGE */
+
+.kitchen-img {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.kitchen-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-content p {
+    font-size: 13px;
+    margin: 5px 0 20px;
+}
+/* LINKS */
+
+.box-content a {
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.box-content a:hover {
+    color: #c7511f;
+}
+/* PREVENT IMAGE OVERFLOW */
+
+img {
+    max-width: 100%;
 }
 
